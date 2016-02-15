@@ -4,7 +4,7 @@ require_once('includes/classes/Flickr.php');
 require_once('includes/db.php');
 
 $flickr = new Flickr(FLICKR_KEY, FLICKR_SECRET);
-$data = $flickr->search('food');
+$data = $flickr->search('mcdonald');
 
 
 foreach ($data['photos']['photo'] as $photo) {
